@@ -1,4 +1,4 @@
-package com.example.centreFormation.entity;
+package com.example.centreFormation.auth;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Entity;
@@ -9,7 +9,7 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Entity
+
 @Builder
 @Getter
 @Setter
@@ -21,6 +21,6 @@ public class Authentification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
-    private  String token;
-    private LocalDateTime datecreation;
+//    private  String token;
+//    private LocalDateTime datecreation;
 }

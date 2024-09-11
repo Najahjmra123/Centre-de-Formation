@@ -12,7 +12,7 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class SuperAdmin {
+public class SuperAdmin extends User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
